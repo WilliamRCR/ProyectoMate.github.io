@@ -1,0 +1,113 @@
+.banner:before{
+    height: 99.6%;
+}
+body{
+    overflow-y:scroll;
+}
+.directorio{
+    width: 300px;
+    padding: 10px;
+    position: relative;
+    transform: translateX(20%) translateY(-970px);
+    border: 1px solid whitesmoke;
+}
+.directorio ul li{
+    list-style: none;
+}
+.directorio ul li a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+}
+.texto-concepto{
+    border: 1px solid white;
+    width: 550px;
+    transform: translateX(90%) translateY(-1245px);
+    padding: 10px;
+    margin-top: -8px;
+}
+.texto-concepto2{
+    border: 1px solid white;
+    width: 550px;
+    transform: translateX(90%) translateY(-1245px);
+    padding: 10px;
+    margin-top: 10px;
+}
+.texto-concepto2 p{
+    color: whitesmoke;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 18px;
+}
+.texto-concepto p{
+    color: whitesmoke;
+    font-size: 18px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.texto-concepto3{
+    border: 1px solid white;
+    width: 550px;
+    transform: translateX(90%) translateY(-1245px);
+    padding: 10px;
+    margin-top: 10px;
+}
+.texto-concepto3 p{
+    color: whitesmoke;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 18px;
+}
+.texto-concepto4{
+    border: 1px solid white;
+    width: 950px;
+    transform: translateX(200px) translateY(-1245px);
+    padding: 10px;
+    margin-top: 10px;
+    
+}
+.texto-concepto4 p{
+    color: whitesmoke;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 18px;
+}
+.texto-concepto5{
+    border: 1px solid white;
+    width: 950px;
+    transform: translateX(200px) translateY(-1245px);
+    padding: 10px;
+    margin-top: 10px;
+}
+.texto-concepto5 p{
+    color: whitesmoke;
+    font-size: 18px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.concept{
+    width: 950px;
+    transform: translateX(100px) translateY(-1100px);
+    padding: 10px;
+    margin-top: 10px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.concept h2{
+    font-size: 38px;
+}
+.concept h3{
+    font-size: 25px;
+}
+.title-concept{
+    text-align: center;
+}
+.content{
+    text-align: center;
+}
+.img-suma{
+    width: 50%;
+}
+.grafo-title{
+    text-align: center;
+}
+.img-grafos{
+    text-align: center;
+}
+#img-grafo{
+    width: 55%;
+}

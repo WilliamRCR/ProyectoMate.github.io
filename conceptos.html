@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="conceptos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    <title>Matematica Discreta desde Cero</title>
+</head>
+<body>
+    <header class="header">
+        <h1 class="title"><i class="fas fa-calculator" id="icon-calculator"></i>Matemática Discreta desde Cero</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="conceptos.html">Conceptos</a></li>
+                <li><a href="ejemplos.html">Ejemplos</a></li>
+                <li><a href="#">Ejercicios</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="banner">
+        <img src="img1.jpg" alt="">
+    </div>
+    <div class="directorio">
+        <ul>
+            <li><a href="#Adicion y suma">Adición y Multiplicación</a></li>
+            <li><a href="#Permutaciones y combinaciones">Permutaciones y combinaciones</a></li>
+            <li><a href="#Teoría de Conjuntos">Teoría de Conjuntos</a></li>
+            <li><a href="#Inducción Matemática">Inducción Matematica</a></li>
+            <li><a href="#MCD">MCD</a></li>
+            <li><a href="#Teoria de grafos">Teoría de Grafos</a></li>
+            <li><a href="#Teoría de grafos II">Teoría de Grafos II</a></li>
+            <li><a href="#Arboles">Teoría de Arboles</a></li>
+            <li><a href="#Arboles II">Teoría de Arboles II</a></li>
+            <li><a href="#Vectorial">Algebra Vectorial</a></li>
+            <li><a href="#Probabilidad">Probabilidad</a></li>
+        </ul>
+    </div>
+    <div class="texto-concepto">
+        <p>La matemática discreta estudia una serie de estructuras como algoritmos, grafos y teoría de números, que son el fundamento de las ciencias de la computación.</p>
+    </div>
+    <div class="texto-concepto2">
+        <p>Más que una rama de la matemática, la matemática discreta engloba a un conjunto de áreas que se dedican al estudio de estructuras matemáticas “discretas” en vez de “continuas”.</p>
+    </div>
+    <div class="texto-concepto3">
+        <p>Pensemos que en que el cálculo infinitesimal se trabaja sobre los números reales, mientras que la matemática discreta descansa sobre la base de los números naturales.</p>
+    </div>
+    <div class="texto-concepto4">
+        <p>La matemática discreta estudia las estructuras cuyos elementos pueden contarse uno por uno separadamente, como los números enteros, grafos y sentencias lógicas, que son aplicados en diferentes campos de la ciencia, principalmente en las ciencias de la computación.</p>
+    </div>
+    <div class="texto-concepto5">
+        <p>Son fundamentales para la ciencia de la computación, porque solo son computables las funciones de conjuntos numerables. La clave en matemáticas discretas es que no es posible manejar las ideas de proximidad o límite y suavidad en las curvas, como se puede en el análisis. Por ejemplo, en matemáticas discretas una incógnita puede ser 2 o 3, pero nunca se aproximará a 3 por la izquierda con 2.9, 2.99, 2.999, etc. Las gráficas en matemáticas discretas vienen dadas por un conjunto finito de puntos que se pueden contar por separado; es decir, sus variables son discretas o digitales, mientras que las gráficas en cálculo son trazos continuos de rectas o curvas; es decir, sus variables son continuas o analógicas.</p>
+    </div>
+    <article class="concept">
+        <hr>
+        <h2 class="title-concept"><a name="Adicion y suma"></a>Adicion y Multiplicación</h2>
+        <h3>Principio del Conteo</h3>
+        <p>El principio fundamental de conteo establece que el número de posibilidades en que múltiples eventos pueden ocurrir se pueden determinar al multiplicar el número de resultados posibles por cada evento.</p>
+        <p>Contamos con dos principios estos son: Suma y Multiplicación</p>
+        <h3 class="suma">Regla de la suma</h3>
+        <p>Principio de la suma o adición: Supongamos que un evento E puede ocurrir en m formas y un segundo evento F puede ocurrir en n formas, y supongamos que ambos eventos no pueden ocurrir en forma simultánea (disjuntos o mutuamente excluyentes).</p>
+        <p>Entonces E o F pueden ocurrir de m+n formas.</p>
+        <div class="content">
+            <img src="suma.jpg" alt="#" class="img-suma">
+        </div>
+        <h3>Regla Generalizada de la suma</h3>
+        <p>Formula: n1+n2+...+nk</p>
+        <hr>
+        <h3>Reglad de la multiplicación</h3>
+        <p>Supongamos que un evento E puede ocurrir en m formas e independientemente de este evento, un evento F puede ocurrir en n formas.</p>
+        <p> Entonces las combinaciones de los eventos E y F pueden ocurrir en mn formas.</p>
+        <div class="content">
+            <img src="multiplicacion.jpg" alt="#">
+        </div>
+        <h3>Regla Generalizada de la multiplicación</h3>
+        <p>Formula: m*n</p>
+    </article>
+    <article class="concept">
+        <hr>
+        <h2 class="title-concept"><a name="Permutaciones y combinaciones"></a>Permutaciones y combinaciones</h2>
+        <h3>¿Nos importa el orden?</h3>
+        <p>Si el orden no importa entonces es una combinación</p    >
+        <p>Si el orden si importa entoces si es una permutación</p>
+        <h3>Tenemos dos tipos de permutaciones</h3>
+        <p>Con repetición</p>
+        <p>Sin repeteción</p>
+        <h3>Permutaciones con repeteción</h3>
+        <p>Son las más fáciles de calcular. Si tienes n cosas para elegir y eliges r de ellas, las permutaciones posibles son:</p>
+        <h3>n × n × ... (r veces) = n^r</h3>
+        <p>Porque hay n posibilidades para la primera elección, DESPUÉS hay n posibilidades para la segunda elección, y así hasta llegar a la ultima posición.</p>
+        <h3>Permutaciones sin repeteción</h3>
+        <p>Acá se reducen nuestras opciones en los pasos a seguir</p>
+        <h3>Función factorial</h3>
+        <p>!: Quiere decir mutliplicar los numeros descendientes:</p>
+        <p>Ejemplo: 5! = 5*4*3*2*1=120</p>
+        <h3>¿Y si no deseo los elementos?</h3>
+        <p>Usamos la siguiente formula: </p>
+        <p>n!/(n-r)!</p>
+        <hr>
+        <h3>Combinaciones</h3>
+        <p>Una combinación es un arreglo de elementos en donde el orden no importa.</p>
+        <p>Sin repetición: Si cada elemento puede aparecer como mucho una vez</p>
+        <p>Con repetición.  En cambio si no hay esta restricción</p>
+        <hr>
+        <h3>Formula: Combinaciones sin Repetición</h3>
+        <p>n!/r!(n-r)!</p>
+        <h3>Formula: Combinaciones con repeteción</h3>
+        <p>(n+r-1)!/r!(n-1)!</p>
+    </article>
+    
+    <article class="concept">
+        <hr>
+        <h2 class="title-concept"><a name="Teoría de Conjuntos"></a>Teoría de Conjuntos</h2>
+        <h3>Conjunto</h3>
+        <p>Un conjunto es una colección o clase de objetos bien definidos.
+        </p    >
+        <p>Estos objetos se llaman elementos o miembros del conjunto.</p>
+        <h3>Notación de Conjuntos</h3>
+        <p>Los conjuntos se denotan con las letras mayusculas de nuestro alfabeto (A, B, C, D, ..., X, Y, Z)</p>
+        <p>Algunas veces con letras de alfabeto griego. Los elementos simplemente se escriben dentro de llaves, separado por comas.</p>
+        <h3>Determinación de Conjuntos</h3>
+        <p>La determinación de un conjunto corresponde a la manera como éste puede expresarse. 
+        </p>
+        <p>Para determinar un conjunto se utilizan dos formas:</p>
+        <p>Determinación por extensión </p>
+        <p>Determinación por comprensión</p>
+        <h3>Determinación por Extensión</h3>
+        <p>Un conjunto se determina por extensión cuando se enumeran o se nombran los elementos del conjunto. Cuando el conjunto es finito se escriben entre llaves, separados por comas. Cuando el conjunto es infinito se escriben entre llaves algunos elementos y se ponen puntos suspensivos.</p>
+        <p>D={1, 2, 3, 4, 5, 6, 7, 8, 9…}</p>
+        <p>E={1, 2, 3, 5, 7, 11, 13, 17, 19}</p>
+        <h3>Determinación de Conjuntos por Comprensión </h3>
+        <p>Un conjunto se determina por comprensión enunciando la propiedad o cualidad que distingue a los elementos. 
+        </p>
+        <p>Para tal fin se utiliza lo siguiente:
+        </p>
+        <p>{x/x cumple la propiedad},
+        </p>
+        <h3>Relación de Conjuntos </h3>
+        <p>Pertenencia: x∈A↔️Ax Si x no es el elemnto de A o x no está en A, es decir, ¬(x∈A) se simboliza x∈A↔️¬Ax </p>
+        <p>Inclusión: Dados dos conjuntos A y B, esta relacion se utiliza para indicar que el conjunto A es sunbconjunto del conjunto B, lo cual se escribe: A ⊂ B </p>
+        <p>Igualdad: La ilgualdad de dos conjuntos A y B denota A=B</p>
+        <h3>Operaciones de Conjuntos</h3>
+        <p>Intersección</p>
+        <p>Unión</p>
+        <p>Diferencia</p>
+        <p>Diferencia Simétrica</p>
+        <h3>Intersección de Conjuntos</h3>
+        <p>La intersección de dos conjuntos A y B es el conjunto formado por todos los elementos comunes de ambos conjuntos (sin repetir elementos), es decir, es el conjunto formado por todos los elementos repetidos</p>
+        <p>Notación: A∩B       A∩B={x/ x∈A ^ x∈B}</p>
+        <h3>Unión de Conjuntos</h3>
+        <p>La unión de dos conjuntos A y B es el conjunto formado por todos los elementos comunes y no comunes de ambos conjuntos (sin repetir elementos)
+        </p>
+        <p>Notación: A∩B       A∩B={x/ x∈A ˅ x∈B}</p>
+        <h3>Diferencia de Conjuntos</h3>
+        <p>La diferencia entre de dos conjuntos A y B es el conjunto formado por todos los elementos no comunes del conjunto B respecto al conjunto A; es decir, los elementos que están en A, pero no están en B
+        </p>
+        <p>Notación:  A-B</p>
+        <h3>Diferencia Simetrica</h3>
+        <p>La diferencia simétrica entre de dos conjuntos A y B es el conjunto formado por todos los elementos no comunes de ambos conjuntos; es decir, los elementos que no están repetidos entre los conjuntos 
+        </p>
+        <p>Notación:  A+B</p>
+        <hr>
+        <h3>Diagramas de Venn</h3>
+        <p>Se pueden definir como círculos que se superponen u otras figuras para ilustrar las relaciones lógicas entre dos o más conjuntos de elementos. A menudo, se utilizan para organizar cosas de forma gráfica, destacando en qué se parecen y difieren los elementos. Los diagramas de Venn, también denominados "diagramas de conjunto" o "diagramas lógicos", se usan ampliamente en las áreas de matemática, estadística, lógica, enseñanza, lingüística, informática y negocios.
+        </p>
+        <hr>
+        <div class="content">
+            <img src="diagrama1.jpg" alt="#">
+        </div>
+        <hr>
+        <div class="content">
+            <img src="diagrama2.jpg" alt="#">
+        </div>
+        <hr>
+        <div class="content">
+            <img src="diagrama3.jpg" alt="#">
+        </div>
+        <hr>
+        <div class="content">
+            <img src="diagrama4.jpg" alt="#">
+        </div>
+        <hr>
+        <h3>Operaciones con Conjuntos</h3>
+        <p>Conjuton</p>
+        <div class="content">
+            <img src="diagrama5.jpg" alt="#">
+        </div>
+        <hr>
+        <h3>Union</h3>
+        <div class="content">
+            <img src="diagrama6.jpg" alt="#">
+        </div>
+        <hr>
+        <h3>Intersección</h3>
+        <div class="content">
+            <img src="diagrama7.jpg" alt="#">
+        </div>
+        <hr>
+        <h3>Diferencia</h3>
+        <div class="content">
+            <img src="diagrama8.jpg" alt="#">
+        </div>
+        <hr>
+        <h3>Diferencia Simétrica</h3>
+        <div class="content">
+            <img src="diagrama9.jpg" alt="#">
+        </div>
+        <hr>
+        <h3>Producto Cartesiano </h3>
+        <p>El producto cartesiano de un conjunto A y de un conjunto B es el conjunto constituido por la totalidad de los pares ordenados que tienen un primer componente en A y un segundo componente en B.
+        </p>
+        <h3>Forma Matricial</h3>
+        <div class="content">
+            <img src="diagrama10.jpg" alt="#">
+        </div>
+        <hr>
+        <h3>Forma Sagital</h3>
+        <div class="content">
+            <img src="diagrama11.jpg" alt="#">
+        </div>
+        <hr>
+        <h3>Diagrama del Árbol</h3>
+        <div class="content">
+            <img src="diagrama12.png" alt="#">
+        </div>
+    </article>
+    <article class="concept">
+        <hr>
+        <h2 class="title-concept"><a name="Inducción Matemática"></a>Inducción Matemática</h2>
+        <h3>Inducción Matemática</h3>
+        <p>La inducción matemática es un método de demostración que se utiliza cuando se trata de establecer la veracidad de una lista infinita de proposiciones.
+
+        </p>
+        <p>El método es bastante natural para usarse en una variedad de situaciones en la ciencia de la computación.
+        </p>
+        <p>Los números naturales se definen de manera inductiva. Es decir, incluso hablando muy informalmente, al describir los números naturales no podemos nombrar a todos los números naturales puesto que son infinitos, lo que hacemos normalmente es decir algo como “1 es un número natural, también 2 y 3 y 4 y así te sigues, si le sumas 1 a un número natural te da otro número natural”.</p>
+        <h3>Base inducción Matemática</h3>
+        <p>a. 1 es un número natural.
+        </p>
+        <p>b. si n es un número natural, entonces n+1 también es número narutal.</p>
+        <p>El principio de inducción es usar esta definición para probar cosas. Podemos definirlo de varias maneras:</p>
+        <p>I.    Si A es un subconjunto de los números naturales tal que:</p>
+           <p>    a. 1 pertenece a A</p>
+        <p> b. si n pertenece a A, entones n + 1 pertenece a A
+        </p>
+        <p>Entonces A contiene todos los naturales.
+        </p>
+        <p>II.    Si una propiedad P de un subconjunto de los números naturales cumple que:
+        </p>
+        <p>a. P es cierta para 1 y </p>
+        <p>b. si P es cierta para n, entonces P es cierta para n + 1. </p>
+        <p>Entonces P es cierta ara todos los naturales.</p>
+        <h3>Analogía de los Dominós</h3>
+        <p>Si ponemos todos nuestros dominós parados en una fila, necesitamos sólo asegurarnos de dos cosas para que se caigan: 
+        </p>
+        <p> a) Que exista al menos un dominó que se caiga. 
+        </p>
+        <p>b) Que si un dominó cae, empuja al siguiente. 
+
+        </p>
+        <p>Para la primera parte, no tiene que ser el primer dominó. Si tiramos el primero, queremos que se caigan todos; pero si tiramos el segundo o el tercero o el quinto, queremos que se caigan todos después el que tiramos. 
+        </p>
+        <p>Para la segunda parte tenemos que asegurarnos que la distancia entre cada dos dominós no sea demasiada o que estén en el ángulo correcto, porque si uno solo no empuja al que sigue, entonces no se van a caer todos. </p>
+        <p>Los números naturales son como un conjunto infinito pero ordenado de dominós, donde cada dominó tiene escrito un número. Las pruebas por inducción son como ordenar nuestros dominós parados en una fila y ver si es posible empujar alguno para que se caigan todos. 
+        </p>
+        <p>a) El caso base es asegurarse de que exista un primer dominó que se caiga. 
+        </p>
+        <p>b) El paso inductivo es suponer que si cumple para algún entero, cumple para el siguiente. Como sabemos que cumple para el caso base, entonces cumple para el siguiente; como cumple para el siguiente, cumple a su vez para su siguiente y así sucesivamente cumplen todos los enteros a partir del caso base.   
+        </p>
+        <p>Esos dos pasos nos aseguran que se caen todos los dominós sin necesidad de verlos caer.
+        </p>
+        <hr>
+    </article>
+
+    <article class="concept">
+        
+        <h2 class="title-concept"><a name="MCD"></a>MCD</h2>
+        <h3>Número primos</h3>
+        <p>Se dice que todo número natural mayor que uno (n ∈ N, n > 1) es un número primo, si sus únicos divisores en el conjunto de los números naturales (N) son 1 y “n”. De este modo se dice también que todo número no primo es un número compuesto.
+
+
+        </p>
+        <h3>Teorema Fundamental de la Aritmética</h3>
+        <p>Todo número entero mayor que uno (n ∈ Z, n > 1), se descompone, como producto de números primos, de manera única salvo el orden de los factores.
+        </p>
+        <h3>Teorema de la División</h3>
+        <div class="content">
+            <img src="Teorema de la división.jpg" alt="#">
+        </div>
+        
+        <p>Dados enteros a, b con b diferente a 0,  existen enteros q y r tales que
+        </p>
+        <p>a = b q + r   y   0 <=  r  < |b|
+        </p>
+           <p>- Al número a se le llama dividendo.</p>
+           <p>- Al número b se le llama divisor.</p>
+           <p>- Al número q se le llama cociente.</p>
+           <p>- Al número r se le llama residuo.
+        </p>
+        <p> Si queremos hallar el resultado de dividir 19 entre 5 tenemos: 19=5x3+4, es decir, que el cociente es 3 y el residuo 4. Se puede observar que el residuo 4 es mayor que 0 y menor que 5 que es el divisor.
+
+        </p>
+        <p>a = 19,
+            b = 5,
+            q = 3,
+            r = 4
+            
+        </p>
+        <p>Si queremos hallar el resultado de dividir 23 entre 7 tenemos: 23=7x3+2, lo que quiere decir que el cociente es 3 y el residuo es 2.
+
+        </p>
+        <p>a = 23,
+            b = 7,
+            q = 3,
+            r = 2
+            </p>
+        <h3>Divisibilidad</h3>
+        <p> Si x, b ∈ Z, 
+        </p>
+        <p> x divide a b , x⎥ b, 
+        </p>
+        <p> si ∃c∈Z tal que b=x·c. 
+        </p>
+        <p> Se dice también que b es múltiplo de x o que x es divisor de b. En caso contrario, x∤b, x no divide a b.
+        </p>
+        <h3>Máximo Común Divisor</h3>
+        <p> Dados dos números enteros positivos su máximo común divisor no es más que el mayor de los divisores comunes de ambos números
+        <h3>El Algoritmo de Euclides</h3>
+        <p> Euclides observó la división entera de dos números a, b, con a>b. La división entre a y b -razonaba Euclides- es una relación entre dos enteros a y b como sigue:  
+        </p>
+        <p>a=b·c+r
+        </p>
+        <p>Y en consecuencia:
+        </p>
+        <p>m.c.d.(a, b)=m.c.d.(b, r)
+        </p>
+        <h3>¿Para que nos servirá?</h3>
+        <p>El famoso algoritmo de Bresenham para dibujar rectas digitales en la pantalla es, en esencia, el algoritmo de Euclides.
+        </p>
+        <p>Es una pieza esencial en los sistemas de cifrado basados en números primos tales como el RSA. Ello es debido a que permite calcular los inversos modulares con facilidad.
+        </p>
+        <p>En informática, las cadenas euclídeas se generan a partir de una versión modificada del algoritmo de Euclides.
+        </p>
+    </article>
+    <div class="concept">
+        <hr>
+        <h2 class="grafo-title"><a name="Teoria de grafos"></a>Teoría de grafos</h2>
+        <h3 class="grafo-title">Grafos</h3>
+        <p>
+            En matemáticas y en ciencias de la computación, la teoría de grafos estudia las propiedades de los grafos. 
+            Un grafo es un conjunto, no vacío, de objetos llamados vértices (o nodos) y una selección de pares de vértices, llamados aristas (edges en inglés) que pueden ser orientados o no. 
+            Típicamente, un grafo se representa mediante una serie de puntos (los vértices) conectados por líneas (las aristas).
+        </p>
+        <div class="img-grafos">
+            <img src="grafo1.1.PNG" alt="#">
+        </div>
+        <hr>
+        <h4 class="grafo-title">Complementos del grafo</h4>
+        <div class="img-grafos">
+            <img src="grafo1.2.PNG" alt="#">
+        </div>
+        <hr>
+        <h4 class="grafo-title">Lazos en grafos</h4>
+        <div class="img-grafos">
+            <img src="grafo1.3.PNG" alt="#">
+        </div>
+        <h4 class="grafo-title">Aristas Paralelas</h4>
+        <hr>
+        <div class="img-grafos">
+            <img src="grafo1.4.png" alt="#"  id="img-grafo">
+        </div>
+        <hr>
+        <h4 class="grafo-title">Vertices adyacentes</h4>
+        <div class="img-grafos">
+            <img src="grafo1.5.png" alt="#"  id="img-grafo">
+        </div>
+        <h3 class="grafo-title">Tipos de Grafos</h3>
+        <p>
+            Un grafo dirigido o grafo orientado, es un tipo de grafo en el cual el conjunto de las aristas tiene una dirección definida, a diferencia del grafo generalizado, en el cual la dirección puede estar especificada o no.
+        </p>
+        <div class="img-grafos">
+            <img src="grafo1.6.png" alt="#">
+        </div>
+        <hr>
+        <h4 class="grafo-title">¿Que es un grafo simple?</h4>
+        <p>
+            Grafo simple o simplemente grafo es aquel que acepta una sola una arista uniendo dos vértices cualesquiera. Esto es equivalente a decir que una arista cualquiera es la única que une dos vértices específicos. Es la definición estándar de un grafo. No contiene aristas paralelas, lazos ni aristas dirigidos.
+        </p>
+        <div class="img-grafos">
+            <img src="grafo-simple.png" alt="#">
+        </div>
+        <p>
+            Un grafo se dice conexo si, para cualquier par de vértices a y b en G, existe al menos una trayectoria (una sucesión de vértices adyacentes que no repita vértices) de a a b.
+        </p>
+        <div class="img-grafos">
+            <img src="grafo-conexo.png" alt="#">
+        </div>
+        <h3 class="grafo-title">Matriz de adyacencia</h3>
+        <p>
+            Una de las maneras más fáciles de implementar un grafo es usar una matriz bidimensional. En esta implementación de matriz, cada una de las filas y columnas representa un vértice en el grafo. El valor que se almacena en la celda en la intersección de la fila X y la columna Y indica si hay una arista desde el vértice X al vértice Y.
+        </p>
+        <hr>
+        <h3 class="grafo-title">Subgrafos</h3>
+        <p>
+            Un subgrafo es un grafo que esta contenido dentro de otro grafo y que se obtiene eliminando algunas aristas y vértices del grafo principal
+        </p>
+        <div class="img-grafos">
+            <img src="subgrafo.png" alt="#">
+        </div>
+        <h3 class="grafo-title">Grafos isomorfos</h3>
+        <p>
+            Dos grafos son isomorfos cuando existe una correspondencia biunívoca (uno a uno), entre sus vértices de tal forma que dos de estos quedan unidos por una arista en común.
+        </p>
+        <p>
+            Dos grafos son isomorfos cuando existe una correspondencia biunívoca (uno a uno), entre sus vértices de tal forma que dos de estos quedan unidos por una arista en común.
+        </p>
+        <hr>
+        <h2 class="title-concept"><a name="Teoría de grafos II"></a>Teoría de grafos II</h2>
+        <h3 class="title-concept">Grado de vertice</h3>
+        <p>
+            El grado de un vértice se puede definir como la cantidad de aristas que parten desde o hacia un mismo vértice
+        </p>
+        <div class="img-grafo">
+            <img src="grado-vertice.png" alt="#" style="width: 460px;">
+        </div>
+        <h3 class="grafo-title">Rutas y Circuitos de Euler</h3>
+        <h4 class="grafo-title">Ruta de euler</h4>
+        <p>
+            Ruta de Euler: Una ruta o camino de Euler es una trayectoria que contiene todas las aristas del grafo y recorre una arista exactamente una vez
+        </p>
+        <p>
+            Condiciones:
+            El Grafo debe de ser conexo
+            <br>
+            Exactamente 2 vértices son de grado impar, todos los demás deben de ser de grado par
+            <br>
+            Se comienza en uno de los vértices de grado impar y se termina en el otro vértice impar 
+        </p>
+        <h4 class="grafo-title">Circuito de eulers</h4>
+        <p>
+            Un circuito de Euler es un Camino de Euler con la diferencia que empieza y termina en el mismo vertice es decir es un camino cerrado que recorre cada arista exactamente una vez 
+        </p>
+        <p>
+            Condiciones:
+            El grafo es conexo
+            <br>
+            Todos los vértices son de grado par
+            <br>
+            Se comienza y se termina en el mismo vertice 
+        </p>
+        <h3 class="grafo-title">Caminos y Caminos Hamiltonianos</h3>
+        <p>
+            Un camino hamiltoniano, en el campo matemático de la teoría de grafos, es un camino de un grafo, una sucesión de aristas adyacentes, que visita todos los vértices del grafo una sola vez. Si además el último vértice visitado es adyacente al primero, el camino es un ciclo hamiltoniano.
+        </p>
+        <h3 class="grafo-title">Coloración de grafos</h3>
+        <p>
+            En Teoría de grafos, la coloración de grafos es un caso especial de etiquetado de grafos; es una asignación de etiquetas llamadas colores a elementos del grafo. De manera simple, una coloración de los vértices de un grafo tal que ningún vértice adyacente comparta el mismo color es llamado vértice coloración. 
+        </p>
+    </div>
+    <div class="concept">
+        <hr>
+        <h2 class="grafo-title"><a name="Arboles"></a>Arbol de direcciones</h2>
+        <p>
+            Desde el punto de vista conceptual, un árbol es un caso particular de grafo, es un objeto que comienza con una raíz y se extiende en ramificaciones o lineas que terminan en un nodo.
+            <br>
+            <br>
+            Representan la estructura no-lineal y dinámica de datos más importante en computación. Dinámica porque puede cambiar durante la ejecución de un programa y no-lineal porque a cada elemento del árbol pueden seguirle varios elementos.
+            <br>
+            <br>
+            Es un conjunto de nodos y líneas. Un nodo es un elemento de información que reside en un árbol. Una línea es un par de nodos ordenados, <u,v>, y a la secuencia de lineas se le llama ruta (path).
+        </p>
+        <div class="img-grafos">
+            <img src="arbol1.PNG" alt="#">
+        </div>
+        <p>
+            Un árbol es una estructura jerárquica aplicada a un conjunto de elementos llamados nodos, uno de los cuales es conocido como raíz. Además, se crea una relación o parentesco entre los nodos que da lugar a términos como padre, hijo, hermano, antecesor, sucesor, ancestro.
+            <br>
+            <br>
+            En ciencias de la computación, un árbol es una estructura de datos comúnmente usada, que emula la estructura de un árbol con un conjunto de nodos conectados.
+            <br>
+            <br>
+            Cada uno de los nodos de un árbol tiene cero o más nodos hijos, que están por debajo de él (en ciencias de la computación, al contrario que en la naturaleza, los árboles crecen hacia abajo, no hacia arriba). 
+            <br>
+            <br>
+            El nodo del cual otro es hijo, es llamado su nodo padre. 
+            <br>
+            <br>
+            Un hijo tiene como máximo un padre; un nodo sin padre es llamado nodo raíz (o simplemente raíz). 
+            <br>
+            <br>
+            Los nodos sin hijos son llamados hojas
+        </p>
+        <h3 class="grafo-title">Propiedades</h3>
+        <p>
+            Tiene un nodo al que se le llama "nodo raíz" o raíz del árbol, éste no tiene "padre".
+            <br>
+            <br>
+            Todos los nodos tienen una sola línea de entrada, excepto el nodo raíz, éste no tiene línea de entrada.
+            <br>
+            <br>
+            Existe una "única" ruta del nodo raíz a todos los demás nodos del árbol.
+            <br>
+            <br>
+            Si existe una ruta <a,b>, entonces "b" es el "hijo" de "a" y es el nodo raíz de un sub-árbol.
+            <br>
+            <br>
+            Todos los nodos que son descendientes de un mismo nodo "padre", son "hermanos".
+            <br>
+            <br>
+            Todo nodo que no tiene ramificaciones (hijos), es un nodo "terminal" u "hoja".
+            <br>
+            <br>
+            Todo nodo que no es raíz ni terminal es un nodo "interior".
+            <br>
+            <br>
+            "Grado" es el número de descendientes directos de un determinado nodo.
+            <br>
+            <br>
+            "Grado del árbol" es el máximo grado de todos los nodos del árbol.
+            <br>
+            <br>
+            "Nivel" es el número de ramificaciones que se deben recorrer para llegar a un determinado nodo. El nodo raíz tiene nivel 1.
+            <br>
+            <br>
+            "Altura del árbol" es el máximo número  de niveles  de todos los nodos del árbol.
+        </p>
+        <h3 class="grafo-title">Longitud de un arbol</h3>
+        <p>
+            Es el número de arcos que deben ser recorridos desde la raíz hasta el nodo X.
+            <br>
+            <br>
+            Cuando hablamos de longitud de un árbol, debemos diferenciar los siguientes conceptos:
+            <br>
+            <br>
+            Longitud de camino.
+            <br>
+            <br>
+            Longitud de camino interno
+            <br>
+            <br>
+            Longitud de camino externo.
+        </p>
+        <h3 class="grafo-title">Longitud de camino</h3>
+        <p>
+            Se define la longitud de camino X como el número de arcos que deben ser recorridos para llegar, desde la raíz, al nodo X. 
+            <br>
+            <br>
+            Por definición, la raíz tiene longitud de camino 1, sus descendientes directos tienen longitud de camino 2 y así sucesivamente. 
+        </p>
+        <div class="img-grafos">
+            <img src="longitud camino.png" alt="#">
+        </div>
+        <h3 class="grafo-title">Longitud de camino interno</h3>  
+        <p>
+            Es la suma de las longitudes de camino de todos los nodos del árbol.
+            <br>
+            <br>
+            En donde i = nivel del árbol, h = altura del árbol, ni = número de nodos en el nivel "i".
+        </p>
+        <div class="img-grafos">
+            <img src="LCI.png" alt="#">
+        </div>
+        <h3 class="grafo-title">Media de Longitud de camino interno</h3>
+        <p>
+            Es el número de arcos que deben ser recorridos en promedio para llegar de la raíz a un nodo cualquiera del árbol.
+            <br>
+            <br>
+            En donde LCI = longitud de camino interno y "n" = número de nodos del árbol.
+        </p>
+        <div class="img-grafos"><img src="LCIM.png" alt=""></div>
+        <h3 class="grafo-title">Longitud de camino externo</h3>
+        <p>
+            Árbol extendido: es aquel en el que el número de hijos de cada nodo es igual al grado del árbol.Para que se cumpla esta condición si es necesario se le agregan nodos especiales al árbol, tantos como sea necesario para que se cumpla la condición.
+            <br>
+            <br>
+            Nodos especiales: su objetivo es reemplazar las ramas vacías o nulas y no pueden tener descendientes.
+        </p>
+        <div class="img-grafos"><img src="LCME.png" alt="#"></div>>
+        <p>
+            La longitud de camino externo LCE es la suma de las longitudes de camino de todos los nodos especiales de un árbol.
+            <br>
+            <br>
+            En donde "h" = altura del árbol, "i" = nivel del árbol y "nei" = número de nodos especiales en el nivel "i".
+        </p>
+        <h3 class="grafo-title">Media de longitud de camino externo</h3>
+        <p>Es el número de arcos que deben ser recorridos en promedio desde la raíz hasta un nodo especial cualquiera del árbol.</p>
+        <p>En donde LCE = longitud de camino externo  y "ne" = número de nodos especiales.</p>
+        <div class="img-grafos"><img src="LCEM.png" alt="#"></div>
+    </div>
+    <div class="concept">
+        <hr>
+        <h2 class="title-concept"><a name="Arboles II"></a>Recorrido de arboles II</h2>
+        <h3 class="grafo-title">Arbol binario</h3>
+        <p>
+            Un árbol binario es un tipo de árbol en que cada vértice máximo puede tener dos hijos; su nodo raíz está enlazado a dos subárboles binarios disjuntos denominados subárbol izquierdo y subárbol derecho. Los árboles binarios no son vacíos ya que como mínimo tienen el nodo raíz.
+        </p>
+        <h3>Arbol Binario LLeno</h3>
+        <p>
+            Es aquel árbol en el que los nodos de cada nivel tienen sus dos hijos o ninguno (si es hoja).
+        </p>
+        <div class="img-grafos">
+            <img src="ABL.png" alt="#">
+        </div>
+        <h3 class="grafo-title">Arbol Binario Completo</h3>
+        <p>
+            Es aquel árbol binario lleno en que todas sus hojas están en el nivel n o n-1 considerando que para un hijo derecho hay siempre un hijo izquierdo. Por lo tanto, todo árbol binario lleno es completo, pero no la viceversa.
+        </p>
+        <div class="img-grafos">
+            <img src="ABC.png" alt="#">
+        </div>
+        <h3>Propiedades de los arboles binarios</h3>
+        <div class="img-grafos">
+            <img src="PAB.png" alt="#">
+        </div>
+        <h3>Recorrido de un arbol binario</h3>
+        <p>
+            Un recorrido en un árbol binario es Una operación que consiste en visitar todos sus vértices o nodos, de tal manera que cada vértice se visite una sola vez.Se distinguen tres tipos de recorrido: INORDEN, POSORDEN Y PREORDEN.
+            <br>
+            <br>
+            En cada recorrido se tiene en cuenta la posición de la raíz (de ahí su nombre) y que siempre se debe ejecutar primero el hijo izquierdo y luego el derecho.
+        </p>
+        <h3>Recorrido de preorden</h3>
+        <p>
+            Preorden: (raíz, izquierdo, derecho). Para recorrer un árbol binario no vacío en preorden, hay que realizar las siguientes operaciones recursivamente en cada nodo, comenzando con el nodo de raíz:
+            <br>
+            <br>
+            Visite la raíz
+            Atraviese el sub-árbol izquierdo
+            Atraviese el sub-árbol derecho           
+        </p>
+        <h3>Recorrido de inorde</h3>
+        <p>
+            Inorden: (izquierdo, raíz, derecho). Para recorrer un árbol binario no vacío en inorden (simétrico), hay que realizar las siguientes operaciones recursivamente en cada nodo:
+            <br>
+            <br>
+            1. Atraviese el sub-árbol izquierdo
+            <br>
+            2. Visite la raíz
+            <br>
+            3. Atraviese el sub-árbol derecho
+        </p>
+        <h3>Recorrido de postorden</h3>
+        <p>Postorden: (izquierdo, derecho, raíz). Para recorrer un árbol binario no vacío en postorden, hay que realizar las siguientes operaciones recursivamente en cada nodo:</p>
+        <p>
+            1. Atraviese el sub-árbol izquierdo
+            <br>
+            2. Atraviese el sub-árbol derecho
+            <br>
+            3. Visite la raíz
+        </p>
+        <h3 class="grafo-title">Arbol Binario de busqueda</h3>
+        <p>
+            Un árbol binario de búsqueda es aquel que tiene sus nodos con un orden definido, de tal manera que los datos del subárbol izquierdo son menores y los del subárbol derecho son mayores. 
+            <br>
+            <br>
+            Estos árboles tienen como particularidad la permisión de que se puedan realizar búsquedas de nodos o datos determinados, utilizando el método de búsqueda binaria de manera similar al usado en arreglos.
+        </p>
+        <p>
+            Para crear un árbol binario de búsqueda a partir un listado de datos, asuma que el primer dato es la raíz del árbol; los demás se ubican en el árbol así: los menores como hijos izquierdos y los mayores como hijos derechos.
+        </p>
+    </div>
+    <div class="concept">
+        <hr>
+        <h2 class="title-concept"><a name="Vectorial"></a>Algebra Vectorial</h2>
+        <h3 class="title-concept">Cantidades escalares y vecotoriales</h3>
+        <p>
+            Cantidad Escalar:
+                Esta especificada por un valor con la unidad apropiada
+                <br>
+                Ejemplo: Temperatura, Masa, Volumen, Tiempo
+                <br>
+                Estas cantidades pueden tener valores positivos, negativos o tener un valor cero
+                <br>
+                Sus operaciones matemáticas se realizan utilizando las reglas de la aritmética
+        </p>
+        <h3>Cantidad Vectorial</h3>
+        <p>
+            Son aquellas que quedan totalmente definidas con un módulo, una dirección y un sentido. 
+            <br>
+            <br>
+            Es el caso de la fuerza, la velocidad, el desplazamiento. En estas magnitudes es necesario especificar hacia dónde se dirigen y, en algunos casos  dónde se encuentran aplicadas. 
+            <br>
+            <br>
+            Todas las magnitudes vectoriales se representan gráficamente mediante vectores, que se simbolizan a través de una flecha.
+        </p>
+        <h3>Vector</h3>
+        <p>
+            Un vector tiene tres características esenciales: módulo, dirección y sentido. 
+            <br>
+            <br>
+            Los vectores se representan goemétricamente con flechas y se le asigna por lo general una letra que en su parte superior lleva una pequeña flecha
+        </p>
+        <div class="img-grafos">
+            <img src="img-vec.png" alt="#">
+        </div>
+        <h3>Modulo</h3>
+        <p>está representado por el tamaño del vector, y hace referencia a la intensidad de la magnitud ( número). Se denota con la letra solamente A o |A|</p>
+        <div class="img-grafos">
+            <img src="modulo.png" alt="#">
+        </div>
+        <h3>Dirección</h3>
+        <p>
+            Corresponde a la inclinación de la recta, y representa al ángulo entre ella y un eje horizontal imaginario. También se pueden utilizar los ejes de coordenadas cartesianas (x, y, z) como también los puntos cardinales para la dirección.
+        </p>
+        <div class="img-grafos">
+            <img src="direccion.png" alt="#">
+        </div>
+        <h3>Sentido</h3>
+        <p>
+            Está indicado por la punta de la flecha. (signo positivo que por lo general no se coloca, o un signo negativo). 
+        </p>
+        <div class="img-grafos"><img src="sentido.png" alt="#"></div>
+        <h3>Sistema de coordenadas cartesianas</h3>
+        <div class="img-grafos"><img src="scc.jpg" alt=""></div>
+        <h2>Operaciones Geometricas con vectores</h2>
+        <p>
+            Suma de Vectores: Al sumar dos vectores se obtiene otro vector (vector suma o resultante). Para obtener el vector suma es necesario recurrir a lo que se conoce como “regla del paralelogramo”. Esto es, se construye un paralelogramo que tenga los vectores como lados y se traza la diagonal del mismo para obtener el vector suma.
+            <br>
+            <br>
+            Para la resta se procede de la misma forma que la suma, pero el vector que resta se debe dibujar con sentido contrario, o sea el signo negativo cambia el sentido del vector. Luego el vector resultante es el que va desde el punto inicial del primer vector, hasta el final del vector que se le cambio el sentido.
+            <br>
+            <br>
+            Multiplicación de un escalar por un vector: Unicamente multiplicamos el escalar por los puntos del vector:
+            <br>
+            2*(3,-4) = (6,-8): Nos da como resultado otro vector
+        </p>
+    </div>
+    <div class="concept">
+        <h2 class="title-concept"><a name="Probabilidad"></a>Probabilidad</h2>
+        <p>La probabilidad es el cálculo matemático que evalúa las posibilidades que existen de que una cosa suceda cuando interviene el azar.</p>
+        <h3>Eventos</h3>
+        <p>
+            Un evento se entiende como el acontecimiento de un hecho en proceso o por venir.
+            <br>
+            <br>
+            Se dice que es aleatorio, si no es posible determinarlo con exactitud. En todo caso, será posible predecirlo con un nivel dado de confianza.
+            <br>
+            <br>
+            Al evento también se le denomina un suceso o un fenómeno. Generalmente, se simula el evento por un conjunto de variables relacionadas entre si. Por lo tanto, un evento está representado con una o más variables vinculadas entre ellas.   
+        </p>
+        <h3>Espacio Muestral</h3>
+        <p>
+            En la teoría de probabilidades, el espacio muestral o espacio de muestreo (denotado E, S, Ω o U) consiste en el conjunto de todos los posibles resultados individuales de un experimento aleatorio.
+            <br>
+            <br>
+            Por ejemplo, si el experimento consiste en lanzar dos monedas, el espacio de muestreo es el conjunto {(cara, cara), (cara, escudo), (escudo, cara) y (escudo, escudo)}. 
+            <br>
+            <br>
+            Un evento o suceso es cualquier subconjunto del espacio muestral, llamándose a los sucesos que contengan un único elemento sucesos elementales. En el ejemplo, el suceso "sacar cara en el primer lanzamiento", o {(cara, cara), (cara, escudo)}, estaría formado por los sucesos elementales {(cara, cara)} y {(cara, esucdo)}.
+        </p>
+        <h3>Espacio muestral discreto</h3>
+        <p>
+            Podemos diferenciar entre dos tipos de espacios muestrales: discretos y continuos
+            <br>
+            <br>
+            Espacio Muestral Discreto: Son aquellos espacios donde el número de sucesos elementales es finito o infinito numerable.
+        </p>
+        <h3>Probabilidad condicional</h3>
+        <p>
+            Si tenemos dos eventos, A y B, la probabilidad condicional de que ocurra el evento A, dado que ha ocurrido el evento B, se representa como P(A|B), y se calcula de la siguiente manera:
+        </p>
+        <div class="img-grafos">
+            <img src="probabilidad.jpg" alt="#">
+        </div>
+        <h3>Ejemplo</h3>
+        <div class="img-grafos"><img src="ejemplo-prob1.0.PNG" alt="#"></div>
+    </div>
+</body>
+</html>

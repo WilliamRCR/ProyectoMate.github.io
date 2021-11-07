@@ -1,0 +1,27 @@
+.Ejercicios{
+    font-family: 'Courier New', Courier, monospace;
+    transform: translateY(-350px);
+    list-style: none;
+    width: 1350px;
+    text-align: center;
+}
+.respuesta{
+    transform: translateY(-320px);
+    text-align: center;
+    list-style: none;
+    font-family: 'Courier New', Courier, monospace;
+    border: 1px solid #000;
+    width: 90%;
+    margin-left: 45px;
+    display: none;
+    padding: 20px;
+}
+#btnCheck:checked ~ .respuesta{
+    display: block;
+}
+input{
+    display: none;
+}
+label{
+    transform: translateX(620px) translateY(-350px);
+}

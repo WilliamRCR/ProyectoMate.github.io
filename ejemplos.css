@@ -1,0 +1,31 @@
+.descripcion{
+    transform: translateX(500px) translateY(-700px);
+    color: whitesmoke;
+    font-family: 'Courier New', Courier, monospace;
+    border: 1px solid white;
+    width: 800px;
+    padding: 5px;
+    text-align: center;
+}
+.banner img{
+    height: 600px;
+    object-fit: cover;
+}
+.directorio{
+    position: relative;
+    transform: translateX(30%) translateY(-500px);
+}
+.ejemplo{
+    width: 1200px;
+    transform: translateX(50px) translateY(-350px);
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+}
+.text-example{
+    text-align: left;
+}
+.img-grafos{
+    display: flex;
+    justify-content: center;    
+}
+
